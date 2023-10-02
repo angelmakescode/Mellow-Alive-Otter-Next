@@ -40,12 +40,12 @@ const AwardSection = (props) => {
             justify-content: center;
           }
           .award-section-container1 {
-            flex: 2;
-            width: 50%;
+            flex: auto;
+            width: 100%;
             display: flex;
             align-items: center;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
           }
           .award-section-container2 {
             flex: 1;

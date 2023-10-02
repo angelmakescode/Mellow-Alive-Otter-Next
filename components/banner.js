@@ -31,7 +31,7 @@ const Banner = (props) => {
       <style jsx>
         {`
           .banner-banner {
-            width: 85%;
+            width: 100%;
             display: flex;
             padding: var(--dl-space-space-threeunits);
             position: relative;
@@ -66,8 +66,9 @@ const Banner = (props) => {
             padding-bottom: var(--dl-space-space-unit);
           }
           .banner-button:hover {
-            color: #ffffff;
-            background-color: var(--dl-color-colors-black);
+            color: var(--dl-color-colors-cream);
+            border-width: 1px;
+            background-color: var(--dl-color-colors-red);
           }
 
           @media (max-width: 1000px) {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 
@@ -6,10 +7,18 @@ const NavigationLinks = (props) => {
   return (
     <>
       <nav className={`navigation-links-nav ${props.rootClassName} `}>
-        <span className="navigation-links-text">{props.PROJECTS}</span>
-        <span className="navigation-links-text1">{props.SERVICES}</span>
-        <span className="navigation-links-text2">{props.ABOUT}</span>
-        <span className="navigation-links-text3">{props.CONTACT}</span>
+        <Link href="/projects">
+          <a className="navigation-links-link">{props.PROJECTS}</a>
+        </Link>
+        <Link href="/services">
+          <a className="navigation-links-link1">{props.SERVICES}</a>
+        </Link>
+        <Link href="/about">
+          <a className="navigation-links-link2">{props.ABOUT}</a>
+        </Link>
+        <Link href="/contact">
+          <a className="navigation-links-link3">{props.CONTACT}</a>
+        </Link>
       </nav>
       <style jsx>
         {`
@@ -19,20 +28,24 @@ const NavigationLinks = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .navigation-links-text {
+          .navigation-links-link {
             font-family: Merriweather;
+            text-decoration: none;
           }
-          .navigation-links-text1 {
+          .navigation-links-link1 {
             font-family: Merriweather;
             margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
-          .navigation-links-text2 {
+          .navigation-links-link2 {
             font-family: Merriweather;
             margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
-          .navigation-links-text3 {
+          .navigation-links-link3 {
             font-family: Merriweather;
             margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
 
           @media (max-width: 800px) {
@@ -40,18 +53,18 @@ const NavigationLinks = (props) => {
               align-items: flex-start;
               flex-direction: column;
             }
-            .navigation-links-text {
+            .navigation-links-link {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .navigation-links-text1 {
+            .navigation-links-link1 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .navigation-links-text2 {
+            .navigation-links-link2 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .navigation-links-text3 {
+            .navigation-links-link3 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }

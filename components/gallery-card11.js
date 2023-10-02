@@ -11,7 +11,9 @@ const GalleryCard11 = (props) => {
           src={props.image_src}
           className="gallery-card11-image"
         />
-        <button className="gallery-card11-button button">{props.button}</button>
+        <button className="gallery-card11-button button">
+          {props.button1}
+        </button>
       </div>
       <style jsx>
         {`
@@ -39,8 +41,9 @@ const GalleryCard11 = (props) => {
             padding-bottom: var(--dl-space-space-unit);
           }
           .gallery-card11-button:hover {
-            color: #ffffff;
-            background-color: var(--dl-color-colors-black);
+            color: var(--dl-color-colors-cream);
+            border-width: 1px;
+            background-color: var(--dl-color-colors-red);
           }
 
           @media (max-width: 767px) {
@@ -50,14 +53,8 @@ const GalleryCard11 = (props) => {
           }
           @media (max-width: 500px) {
             .gallery-card11-button {
-              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
-              font-style: normal;
-              text-align: center;
-              font-weight: 400;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
             }
           }
           @media (max-width: 479px) {
@@ -79,6 +76,7 @@ GalleryCard11.defaultProps = {
   image_alt: 'image',
   subtitle: 'Lorem ipsum dolor sit amet',
   button: 'start a project',
+  button1: 'view project',
 }
 
 GalleryCard11.propTypes = {
@@ -88,6 +86,7 @@ GalleryCard11.propTypes = {
   image_alt: PropTypes.string,
   subtitle: PropTypes.string,
   button: PropTypes.string,
+  button1: PropTypes.string,
 }
 
 export default GalleryCard11
