@@ -64,11 +64,6 @@ const Home = (props) => {
             <h1 className="home-text">
               Extraordinary design-with real people in mind.
             </h1>
-            <img
-              alt="image"
-              src="https://i.imgur.com/hVNACXi.png"
-              className="home-image2"
-            />
             <span className="home-text01">
               <span>
                 Kindred Studios- where exceptional design meets the art of
@@ -101,6 +96,11 @@ const Home = (props) => {
               <button className="home-button button">start a project</button>
             </div>
           </div>
+          <img
+            alt="image"
+            src="https://i.imgur.com/hVNACXi.png"
+            className="home-image2"
+          />
         </div>
         <div className="home-banner">
           <h1 className="home-text05">
@@ -434,11 +434,8 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 400;
           }
-          .home-image2 {
-            width: 400px;
-            object-fit: cover;
-          }
           .home-text01 {
+            width: 500px;
             margin-top: var(--dl-space-space-twounits);
             font-family: Merriweather;
             margin-bottom: var(--dl-space-space-twounits);
@@ -461,6 +458,11 @@ const Home = (props) => {
           .home-button:hover {
             color: #ffffff;
             background-color: var(--dl-color-colors-black);
+          }
+          .home-image2 {
+            width: 600px;
+            align-self: flex-end;
+            object-fit: cover;
           }
           .home-banner {
             width: var(--dl-size-size-maxwidth);
@@ -1103,10 +1105,12 @@ const Home = (props) => {
           }
           @media (max-width: 1000px) {
             .home-hero {
-              flex-direction: column;
+              align-items: center;
+              flex-direction: row;
+              justify-content: center;
             }
             .home-container02 {
-              align-self: center;
+              align-self: flex-start;
               align-items: center;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
@@ -1115,9 +1119,6 @@ const Home = (props) => {
             .home-text {
               align-self: flex-start;
               text-align: left;
-            }
-            .home-image2 {
-              align-self: flex-start;
             }
             .home-text01 {
               align-self: flex-start;
@@ -1128,6 +1129,10 @@ const Home = (props) => {
             .home-btn-container {
               align-self: flex-start;
               justify-content: center;
+            }
+            .home-image2 {
+              width: 350px;
+              align-self: flex-end;
             }
             .home-banner {
               width: 900px;
@@ -1275,12 +1280,12 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-image2 {
-              width: 80%;
-            }
             .home-text01 {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
+            }
+            .home-image2 {
+              width: 80%;
             }
             .home-banner {
               width: 800px;
@@ -1422,9 +1427,6 @@ const Home = (props) => {
               margin-bottom: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
-            .home-image2 {
-              width: 100%;
-            }
             .home-text01 {
               padding-left: 0px;
               padding-right: 0px;
@@ -1433,6 +1435,9 @@ const Home = (props) => {
               align-self: flex-end;
               align-items: center;
               flex-direction: column;
+            }
+            .home-image2 {
+              width: 100%;
             }
             .home-banner {
               width: 500px;
@@ -1524,7 +1529,10 @@ const Home = (props) => {
               margin-bottom: var(--dl-space-space-unit);
             }
             .home-text35 {
+              color: var(--dl-color-colors-cream);
+              font-size: 3rem;
               align-self: center;
+              font-family: Merriweather;
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
@@ -1577,19 +1585,19 @@ const Home = (props) => {
               font-weight: 600;
               margin-bottom: var(--dl-space-space-halfunit);
             }
-            .home-image2 {
-              width: 100%;
-              margin: 0px;
-              align-self: center;
-              margin-top: var(--dl-space-space-halfunit);
-              margin-bottom: var(--dl-space-space-halfunit);
-            }
             .home-text01 {
               font-size: 0.9rem;
               margin-top: var(--dl-space-space-unit);
               padding-left: 0px;
               margin-bottom: var(--dl-space-space-unit);
               padding-right: 0px;
+            }
+            .home-image2 {
+              width: 100%;
+              margin: 0px;
+              align-self: center;
+              margin-top: var(--dl-space-space-halfunit);
+              margin-bottom: var(--dl-space-space-halfunit);
             }
             .home-text05 {
               font-size: 2rem;
