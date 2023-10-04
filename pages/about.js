@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 
 import NavigationLinks from '../components/navigation-links'
+import Banner from '../components/banner'
+import AwardSection from '../components/award-section'
 
 const About = (props) => {
   return (
@@ -27,7 +29,7 @@ const About = (props) => {
           </div>
           <div data-role="MobileMenu" className="about-mobile-menu">
             <div className="about-nav2">
-              <div className="about-container1">
+              <div className="about-container01">
                 <img
                   alt="image"
                   src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
@@ -66,23 +68,63 @@ const About = (props) => {
             </div>
           </div>
         </header>
-        <div className="about-hero">
-          <span className="about-text">about us:</span>
-          <h1 className="about-text1">
-            <span>
-              From concept to completion, we collaborate closely with you,
-              infusing each project with our expertise, creativity, and
-              unwavering attention to detail. With an emphasis on personalized
-              service and a commitment to exceeding expectations, we take pride
-              in transforming houses into homes that evoke a sense of joy,
-              comfort, and inspiration. Step into a world of limitless
-              possibilities and let [Business Name] redefine your living
-              experience.
-            </span>
-            <br></br>
-            <br></br>
-          </h1>
-          <button className="about-button button">start a project</button>
+        <div className="about-container02">
+          <div className="about-container03">
+            <div className="about-container04">
+              <span className="about-text">Who are we?</span>
+              <h1 className="about-text1">
+                <span className="about-text2">
+                  Nestled in a bustling city, Kindred Studios, founded by
+                  childhood friends Emma Davis and Oliver Thompson, is a design
+                  haven rooted in connection. Starting in a cozy attic, the
+                  studio&apos;s essence lies in its commitment to creating not
+                  just beautiful spaces but a sense of belonging. Their
+                  breakthrough project, a historic building turned community
+                  space, epitomized their collaborative approach, involving the
+                  local community in the transformation process.
+                </span>
+                <br></br>
+              </h1>
+              <button className="about-button button">start a project</button>
+            </div>
+            <div className="about-container05">
+              <img
+                alt="image"
+                src="https://images.pexels.com/photos/4065137/pexels-photo-4065137.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                className="about-image2"
+              />
+            </div>
+          </div>
+        </div>
+        <Banner rootClassName="banner-root-class-name1"></Banner>
+        <AwardSection></AwardSection>
+        <div className="about-container06">
+          <div className="about-container07">
+            <div className="about-container08">
+              <h1 className="about-text4">
+                <span>
+                  From concept to completion, we collaborate closely with you,
+                  infusing each project with our expertise, creativity, and
+                  unwavering attention to detail. With an emphasis on
+                  personalized service and a commitment to exceeding
+                  expectations, we take pride in transforming houses into homes
+                  that evoke a sense of joy, comfort, and inspiration. Step into
+                  a world of limitless possibilities and let Kindred Studios
+                  redefine your living experience.
+                </span>
+                <br></br>
+                <br></br>
+              </h1>
+              <button className="about-button1 button">start a project</button>
+            </div>
+            <div className="about-container09">
+              <img
+                alt="image"
+                src="https://images.pexels.com/photos/5806989/pexels-photo-5806989.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                className="about-image3"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <style jsx>
@@ -142,7 +184,7 @@ const About = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .about-container1 {
+          .about-container01 {
             width: 100%;
             display: flex;
             align-items: center;
@@ -175,14 +217,29 @@ const About = (props) => {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
-          .about-hero {
-            width: 95%;
-            padding: var(--dl-space-space-threeunits);
-            box-shadow: 5px 5px 10px 0px #ad9d9d;
-            margin-top: var(--dl-space-space-twounits);
-            min-height: auto;
+          .about-container02 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
             align-items: center;
-            margin-bottom: var(--dl-space-space-twounits);
+            justify-content: flex-start;
+          }
+          .about-container03 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-threeunits);
+            justify-content: space-between;
+          }
+          .about-container04 {
+            flex: 0 0 auto;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            align-items: flex-start;
             flex-direction: column;
             justify-content: center;
           }
@@ -198,7 +255,7 @@ const About = (props) => {
           .about-text1 {
             color: var(--dl-color-colors-black);
             font-size: 1rem;
-            max-width: 100%;
+            max-width: auto;
             align-self: flex-start;
             margin-top: var(--dl-space-space-twounits);
             text-align: left;
@@ -206,7 +263,7 @@ const About = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
           }
           .about-button {
-            align-self: center;
+            align-self: flex-start;
             transition: 0.3s;
             font-family: Merriweather;
             padding-top: var(--dl-space-space-unit);
@@ -220,10 +277,131 @@ const About = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
+          .about-container05 {
+            flex: 0 0 auto;
+            width: 1000px;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .about-image2 {
+            width: 1000px;
+            height: 650px;
+            object-fit: cover;
+          }
+          .about-container06 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+          .about-container07 {
+            flex: 0 0 auto;
+            width: 1825px;
+            display: flex;
+            align-items: flex-start;
+            margin-left: var(--dl-space-space-threeunits);
+            border-color: var(--dl-color-colors-black);
+            border-width: 1px;
+            margin-right: var(--dl-space-space-threeunits);
+            margin-bottom: var(--dl-space-space-threeunits);
+            justify-content: space-between;
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+          }
+          .about-container08 {
+            flex: 0 0 auto;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .about-text4 {
+            color: var(--dl-color-colors-black);
+            font-size: 1rem;
+            max-width: auto;
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-twounits);
+            text-align: left;
+            font-family: Merriweather;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .about-button1 {
+            align-self: flex-start;
+            transition: 0.3s;
+            font-family: Merriweather;
+            padding-top: var(--dl-space-space-unit);
+            padding-left: var(--dl-space-space-twounits);
+            border-radius: var(--dl-radius-radius-circle);
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+          }
+          .about-button1:hover {
+            color: var(--dl-color-colors-cream);
+            border-width: 1px;
+            background-color: var(--dl-color-colors-red);
+          }
+          .about-container09 {
+            flex: 0 0 auto;
+            width: 650px;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .about-image3 {
+            width: 650px;
+            height: 650px;
+            object-fit: cover;
+          }
           @media (max-width: 1600px) {
             .about-nav {
-              padding-left: var(--dl-space-space-sixunits);
-              padding-right: var(--dl-space-space-sixunits);
+              padding-left: var(--dl-space-space-threeunits);
+              padding-right: var(--dl-space-space-threeunits);
+            }
+            .about-container05 {
+              width: 700px;
+            }
+            .about-image2 {
+              width: 700px;
+            }
+            .about-container07 {
+              width: 1500px;
+              margin-bottom: var(--dl-space-space-threeunits);
+              border-bottom-width: 1px0;
+            }
+            .about-container08 {
+              width: 650px;
+            }
+            .about-container09 {
+              width: 500px;
+            }
+          }
+          @media (max-width: 1500px) {
+            .about-container05 {
+              width: 600px;
+            }
+            .about-image2 {
+              width: 600px;
+            }
+            .about-container07 {
+              width: var(--dl-size-size-maxwidth);
+              margin-bottom: var(--dl-space-space-threeunits);
+              border-bottom-width: 0px;
+            }
+            .about-container08 {
+              width: 500px;
+            }
+            .about-container09 {
+              width: 500px;
             }
           }
           @media (max-width: 1000px) {
@@ -231,11 +409,41 @@ const About = (props) => {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
+            .about-container04 {
+              width: 430px;
+            }
+            .about-text1 {
+              max-width: 350px;
+            }
+            .about-container05 {
+              width: 500px;
+              align-items: flex-start;
+            }
+            .about-image2 {
+              width: 500px;
+              align-self: center;
+            }
+            .about-container07 {
+              width: 900px;
+              margin-top: 0px;
+              margin-left: var(--dl-space-space-threeunits);
+              margin-right: var(--dl-space-space-threeunits);
+              margin-bottom: var(--dl-space-space-threeunits);
+            }
+            .about-container08 {
+              width: 350px;
+            }
+            .about-container09 {
+              width: 350px;
+            }
+            .about-image3 {
+              width: 350px;
+            }
           }
           @media (max-width: 800px) {
             .about-nav {
               padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-threeunits);
             }
             .about-nav1 {
               display: none;
@@ -250,31 +458,87 @@ const About = (props) => {
               width: var(--dl-size-size-small);
               height: var(--dl-size-size-small);
             }
-          }
-          @media (max-width: 767px) {
-            .about-hero {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
+            .about-container04 {
+              width: 250px;
+            }
+            .about-container05 {
+              width: 425px;
+            }
+            .about-image2 {
+              width: 425px;
+            }
+            .about-container07 {
+              width: 700px;
+              margin-top: 0px;
+              margin-left: var(--dl-space-space-threeunits);
+              margin-right: var(--dl-space-space-threeunits);
+              margin-bottom: var(--dl-space-space-threeunits);
+              justify-content: space-between;
+              border-bottom-width: 0px;
+            }
+            .about-container08 {
+              width: 250px;
+            }
+            .about-text4 {
+              width: 250px;
+            }
+            .about-container09 {
+              width: 300px;
+            }
+            .about-image3 {
+              width: 300px;
             }
           }
           @media (max-width: 500px) {
             .about-nav {
-              padding: var(--dl-space-space-unit);
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-oneandhalfunits);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
             }
             .about-mobile-menu {
               padding: 16px;
             }
+            .about-container04 {
+              width: 150px;
+              height: auto;
+            }
+            .about-text {
+              color: var(--dl-color-colors-red);
+              font-size: 2rem;
+              font-style: normal;
+              font-family: Merriweather;
+              font-weight: 900;
+              letter-spacing: 2px;
+            }
+            .about-text1 {
+              color: var(--dl-color-colors-black);
+              font-size: 0.8rem;
+              margin-top: 0px;
+              min-height: 500px;
+              font-family: Merriweather;
+              margin-bottom: 0px;
+            }
+            .about-text2 {
+              font-family: Merriweather;
+            }
             .about-button {
+              font-size: 0.7rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
             }
-          }
-          @media (max-width: 479px) {
-            .about-hero {
-              padding-top: var(--dl-space-space-twounits);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
+            .about-container05 {
+              width: 250px;
+            }
+            .about-image2 {
+              width: 250px;
+            }
+            .about-container08 {
+              width: 200px;
+            }
+            .about-button1 {
+              align-self: center;
+              box-shadow: 5px 5px 10px 0px #ad9d9d;
             }
           }
         `}

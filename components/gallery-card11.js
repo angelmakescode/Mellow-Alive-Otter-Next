@@ -72,21 +72,21 @@ GalleryCard11.defaultProps = {
   image_src:
     'https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEyfHxmb3Jlc3R8ZW58MHx8fHwxNjI2MjUxMjg4&ixlib=rb-1.2.1&h=1200',
   title: 'Project Title',
+  button1: 'view project',
   rootClassName: '',
   image_alt: 'image',
   subtitle: 'Lorem ipsum dolor sit amet',
   button: 'start a project',
-  button1: 'view project',
 }
 
 GalleryCard11.propTypes = {
   image_src: PropTypes.string,
   title: PropTypes.string,
+  button1: PropTypes.string,
   rootClassName: PropTypes.string,
   image_alt: PropTypes.string,
   subtitle: PropTypes.string,
   button: PropTypes.string,
-  button1: PropTypes.string,
 }
 
 export default GalleryCard11

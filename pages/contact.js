@@ -90,28 +90,25 @@ const Contact = (props) => {
                   placeholder="Message"
                   className="contact-textarea textarea"
                 ></textarea>
-                <button className="contact-button button">
-                  <span className="contact-text01">
-                    <span className="contact-text02">send</span>
-                    <br></br>
-                  </span>
-                </button>
               </div>
             </div>
+            <button className="contact-button button">send</button>
           </div>
           <div className="contact-container5">
-            <h1 className="contact-text04">Contact Info</h1>
+            <h1 className="contact-text01">Contact Info</h1>
             <div className="contact-container6">
-              <span className="contact-text05">
-                <span>Email:</span>
-                <br></br>
-                <span>emailaddress@email.com</span>
-              </span>
-              <span className="contact-text09">
-                <span>Phone:</span>
-                <br></br>
-                <span>(123)456-789</span>
-              </span>
+              <div className="contact-container7">
+                <span className="contact-text02">
+                  <span>Phone:</span>
+                  <br></br>
+                  <span>(123)456-7891</span>
+                </span>
+                <span className="contact-text06">
+                  <span>Email:</span>
+                  <br></br>
+                  <span>emailaddress@email.com</span>
+                </span>
+              </div>
             </div>
             <img
               alt="image"
@@ -121,7 +118,7 @@ const Contact = (props) => {
           </div>
         </div>
         <div className="contact-hero-type-11">
-          <h1 className="contact-text13">
+          <h1 className="contact-text10">
             “the heart of design lies in understanding the needs and desires of
             the people who inhabit a space.”
           </h1>
@@ -269,15 +266,13 @@ const Contact = (props) => {
             justify-content: flex-start;
           }
           .contact-textarea {
-            width: 800px;
+            width: 705px;
             height: 300px;
           }
           .contact-button {
-            align-self: flex-end;
-            margin-top: var(--dl-space-space-unit);
+            align-self: flex-start;
             transition: 0.3s;
             font-family: Merriweather;
-            margin-left: var(--dl-space-space-unit);
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-twounits);
             border-radius: var(--dl-radius-radius-circle);
@@ -285,16 +280,9 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-unit);
           }
           .contact-button:hover {
-            color: var(--dl-color-colors-black);
-            border-width: 2px;
-            background-color: var(--dl-color-colors-shadow);
-          }
-          .contact-text01 {
-            color: var(--dl-color-colors-black);
-          }
-          .contact-text02:hover {
-            color: #ffffff;
-            background-color: var(--dl-color-colors-black);
+            color: var(--dl-color-colors-cream);
+            border-width: 1px;
+            background-color: var(--dl-color-colors-red);
           }
           .contact-container5 {
             flex: 0 0 auto;
@@ -305,7 +293,7 @@ const Contact = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .contact-text04 {
+          .contact-text01 {
             color: var(--dl-color-colors-cream);
             font-size: 2rem;
             font-style: normal;
@@ -320,15 +308,17 @@ const Contact = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .contact-text05 {
-            color: var(--dl-color-colors-cream);
-            font-size: 1.2rem;
-            font-style: normal;
-            margin-top: var(--dl-space-space-fiveunits);
-            font-family: Merriweather;
-            font-weight: 400;
+          .contact-container7 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-self: flex-start;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
           }
-          .contact-text09 {
+          .contact-text02 {
             color: var(--dl-color-colors-cream);
             font-size: 1.2rem;
             align-self: center;
@@ -336,7 +326,15 @@ const Contact = (props) => {
             margin-top: var(--dl-space-space-fiveunits);
             font-family: Merriweather;
             font-weight: 400;
-            margin-left: var(--dl-space-space-sixunits);
+            margin-left: 0px;
+          }
+          .contact-text06 {
+            color: var(--dl-color-colors-cream);
+            font-size: 1.2rem;
+            font-style: normal;
+            margin-top: var(--dl-space-space-fiveunits);
+            font-family: Merriweather;
+            font-weight: 400;
           }
           .contact-image2 {
             width: var(--dl-size-size-xxlarge);
@@ -359,7 +357,7 @@ const Contact = (props) => {
             justify-content: center;
             background-color: var(--dl-color-colors-red);
           }
-          .contact-text13 {
+          .contact-text10 {
             color: var(--dl-color-colors-cream);
             font-size: 2.4em;
             font-style: italic;
@@ -417,11 +415,7 @@ const Contact = (props) => {
               border-width: 0px;
             }
             .contact-button {
-              color: var(--dl-color-colors-cream);
-              align-self: flex-end;
-              border-color: var(--dl-color-colors-cream);
-              margin-right: 115px;
-              background-color: transparent;
+              align-self: flex-start;
             }
             .contact-container5 {
               width: 500px;
@@ -432,7 +426,7 @@ const Contact = (props) => {
               border-radius: 10px;
               background-color: var(--dl-color-colors-red);
             }
-            .contact-text04 {
+            .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 2rem;
               align-self: flex-start;
@@ -441,17 +435,7 @@ const Contact = (props) => {
               font-weight: 700;
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .contact-text05 {
-              color: var(--dl-color-colors-cream);
-              font-size: 1.2rem;
-              align-self: flex-start;
-              font-style: normal;
-              margin-top: var(--dl-space-space-fourunits);
-              font-family: Merriweather;
-              font-weight: 400;
-              margin-bottom: var(--dl-space-space-fourunits);
-            }
-            .contact-text09 {
+            .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 1.2rem;
               align-self: flex-start;
@@ -460,7 +444,18 @@ const Contact = (props) => {
               text-align: left;
               font-family: Merriweather;
               font-weight: 400;
-              margin-left: var(--dl-space-space-oneandhalfunits);
+              margin-left: 0px;
+              margin-right: var(--dl-space-space-twounits);
+            }
+            .contact-text06 {
+              color: var(--dl-color-colors-cream);
+              font-size: 1.2rem;
+              align-self: flex-start;
+              font-style: normal;
+              margin-top: var(--dl-space-space-fourunits);
+              font-family: Merriweather;
+              font-weight: 400;
+              margin-bottom: var(--dl-space-space-fourunits);
             }
             .contact-image2 {
               width: 225px;
@@ -488,45 +483,43 @@ const Contact = (props) => {
             }
             .contact-container2 {
               width: 700px;
+              padding: 0px;
               align-items: flex-start;
+              margin-right: 0px;
             }
             .contact-text {
               color: var(--dl-color-colors-cream);
               margin-bottom: var(--dl-space-space-halfunit);
             }
             .contact-textinput {
-              width: 300px;
+              width: 500px;
             }
             .contact-textinput1 {
-              width: 300px;
+              width: 500px;
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
             }
             .contact-textinput2 {
-              width: 300px;
+              width: 500px;
             }
             .contact-textarea {
               width: 500px;
-              height: 300px;
+              height: 175px;
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
             }
             .contact-button {
-              color: var(--dl-color-colors-cream);
-              font-size: 2rem;
-              align-self: flex-end;
-              margin-top: 0px;
-              margin-left: var(--dl-space-space-oneandhalfunits);
-              background-color: transparent;
+              align-self: flex-start;
+              margin-top: var(--dl-space-space-unit);
             }
             .contact-container5 {
               width: 500px;
               height: 500px;
-              padding: var(--dl-space-space-twounits);
+              padding: 0px;
               align-items: flex-start;
               border-radius: 10px;
             }
-            .contact-text04 {
+            .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1.8rem;
               font-style: normal;
@@ -534,38 +527,41 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-text05 {
+            .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 1.5rem;
               font-style: normal;
-              margin-top: var(--dl-space-space-fiveunits);
+              margin-top: 0px;
               font-family: Merriweather;
               font-weight: 400;
+              margin-left: 0px;
+              margin-right: var(--dl-space-space-oneandhalfunits);
             }
-            .contact-text09 {
+            .contact-text06 {
               color: var(--dl-color-colors-cream);
               font-size: 1.5rem;
               font-style: normal;
-              margin-top: 100px;
+              margin-top: 0px;
               font-family: Merriweather;
               font-weight: 400;
+              margin-bottom: 0px;
             }
             .contact-hero-type-11 {
               width: 95%;
               padding: 0px;
               margin-top: var(--dl-space-space-fourunits);
             }
-            .contact-text13 {
+            .contact-text10 {
               width: 100%;
             }
           }
           @media (max-width: 1000px) {
             .contact-nav {
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+              padding-left: 52px;
+              padding-right: 52px;
             }
             .contact-hero-type-1 {
-              width: 98%;
+              width: 900px;
               align-self: center;
               align-items: center;
               padding-left: var(--dl-space-space-twounits);
@@ -575,33 +571,41 @@ const Contact = (props) => {
             }
             .contact-container2 {
               align-items: flex-start;
+              padding-top: 0px;
               margin-right: var(--dl-space-space-twounits);
+              padding-left: 0px;
               margin-bottom: 70px;
               padding-right: 0px;
+              padding-bottom: 0px;
+            }
+            .contact-text {
+              font-size: 2rem;
             }
             .contact-textinput {
+              width: 250px;
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
             .contact-textinput1 {
-              width: 350px;
+              width: 250px;
             }
             .contact-textinput2 {
-              width: 350px;
+              width: 250px;
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
             .contact-textarea {
-              width: 350px;
+              width: 250px;
+              height: 225px;
+              margin-bottom: var(--dl-space-space-unit);
             }
             .contact-button {
               align-self: flex-start;
-              font-family: Merriweather;
             }
-            .contact-text02 {
-              align-self: flex-end;
+            .contact-container5 {
+              width: 350px;
             }
-            .contact-text04 {
+            .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1.5rem;
               align-self: flex-start;
@@ -609,7 +613,10 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-text05 {
+            .contact-container7 {
+              flex-direction: column;
+            }
+            .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 1rem;
               align-self: flex-start;
@@ -617,8 +624,9 @@ const Contact = (props) => {
               margin-top: var(--dl-space-space-twounits);
               font-family: Merriweather;
               font-weight: 400;
+              margin-left: 0px;
             }
-            .contact-text09 {
+            .contact-text06 {
               color: var(--dl-color-colors-cream);
               font-size: 1rem;
               align-self: flex-start;
@@ -630,7 +638,7 @@ const Contact = (props) => {
             .contact-hero-type-11 {
               width: 98%;
             }
-            .contact-text13 {
+            .contact-text10 {
               text-align: center;
             }
           }
@@ -670,8 +678,14 @@ const Contact = (props) => {
               height: var(--dl-size-size-small);
             }
             .contact-hero-type-1 {
-              width: auto;
+              width: 700px;
               padding: var(--dl-space-space-unit);
+            }
+            .contact-container2 {
+              padding-top: 0px;
+              padding-left: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
+              padding-bottom: 0px;
             }
             .contact-text {
               font-size: 1.5rem;
@@ -680,14 +694,30 @@ const Contact = (props) => {
               font-weight: 700;
             }
             .contact-textinput {
+              width: 250px;
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
+            }
+            .contact-textinput1 {
+              width: 250px;
             }
             .contact-textinput2 {
+              width: 250px;
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
             }
-            .contact-text04 {
+            .contact-textarea {
+              width: 250px;
+            }
+            .contact-button {
+              align-self: flex-start;
+            }
+            .contact-container5 {
+              width: 250px;
+              padding: 0px;
+              flex-direction: column;
+            }
+            .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1em;
               align-self: flex-start;
@@ -695,30 +725,34 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-text05 {
-              color: var(--dl-color-colors-cream);
-              font-size: 0.8rem;
-              align-self: flex-start;
-              margin-top: var(--dl-space-space-threeunits);
-              font-family: Merriweather;
+            .contact-container7 {
+              flex-direction: column;
             }
-            .contact-text09 {
+            .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 0.8rem;
               align-self: flex-start;
               font-style: normal;
               font-family: Merriweather;
               font-weight: 400;
-              padding-top: var(--dl-space-space-threeunits);
+              margin-left: 0px;
+              padding-top: 0px;
               padding-bottom: 0px;
             }
+            .contact-text06 {
+              color: var(--dl-color-colors-cream);
+              font-size: 0.8rem;
+              align-self: flex-start;
+              margin-top: var(--dl-space-space-threeunits);
+              font-family: Merriweather;
+            }
             .contact-hero-type-11 {
-              width: 95%;
+              width: 700px;
               padding: var(--dl-space-space-unit);
               border-width: 0px;
               background-color: var(--dl-color-colors-red);
             }
-            .contact-text13 {
+            .contact-text10 {
               color: var(--dl-color-colors-cream);
               font-size: 1.8em;
               font-style: italic;
@@ -759,6 +793,7 @@ const Contact = (props) => {
               width: 250px;
               align-self: center;
               margin-right: 0px;
+              padding-left: 0px;
               margin-bottom: 0px;
               padding-right: 0px;
               flex-direction: column;
@@ -798,26 +833,15 @@ const Contact = (props) => {
               font-family: Merriweather;
             }
             .contact-button {
-              font-size: 0.8rem;
-              align-self: center;
-              box-shadow: 5px 5px 10px 0px #ad9d9d;
-              font-style: normal;
-              text-align: center;
-              font-weight: 400;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+              font-size: 0.7rem;
+              align-self: flex-start;
+              font-family: Merriweather;
             }
-            .contact-text02 {
-              font-size: 0.8rem;
-              align-self: center;
-              box-shadow: 5px 5px 10px 0px #ad9d9d;
-              font-style: normal;
-              text-align: center;
-              font-weight: 400;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+            .contact-container5 {
+              width: 200px;
+              padding: 0px;
             }
-            .contact-text04 {
+            .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1rem;
               font-style: normal;
@@ -825,19 +849,27 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-text05 {
-              color: var(--dl-color-colors-cream);
-              font-size: 0.8rem;
-              margin-top: var(--dl-space-space-threeunits);
+            .contact-container7 {
+              width: 200px;
+              flex-direction: column;
             }
-            .contact-text09 {
+            .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 0.8rem;
               font-style: normal;
               margin-top: var(--dl-space-space-threeunits);
               font-family: Merriweather;
               font-weight: 400;
+              margin-left: 0px;
               padding-top: 0px;
+            }
+            .contact-text06 {
+              color: var(--dl-color-colors-cream);
+              font-size: 0.8rem;
+              margin-top: var(--dl-space-space-threeunits);
+            }
+            .contact-image2 {
+              width: 100px;
             }
             .contact-hero-type-11 {
               width: 475px;
@@ -852,7 +884,7 @@ const Contact = (props) => {
               justify-content: center;
               background-color: var(--dl-color-colors-red);
             }
-            .contact-text13 {
+            .contact-text10 {
               color: var(--dl-color-colors-cream);
               width: auto;
               font-size: 1.2rem;
