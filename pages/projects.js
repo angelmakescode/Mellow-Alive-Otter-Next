@@ -365,14 +365,14 @@ const Projects = (props) => {
           }
           @media (max-width: 1600px) {
             .projects-nav {
-              padding-left: var(--dl-space-space-sixunits);
-              padding-right: var(--dl-space-space-sixunits);
+              padding-left: var(--dl-space-space-threeunits);
+              padding-right: var(--dl-space-space-threeunits);
             }
           }
           @media (max-width: 1000px) {
             .projects-nav {
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-threeunits);
+              padding-right: var(--dl-space-space-threeunits);
             }
             .projects-text08 {
               width: 850px;
@@ -486,12 +486,16 @@ const Projects = (props) => {
               padding-right: var(--dl-space-space-unit);
             }
             .projects-button1 {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              text-align: center;
             }
             .projects-button2 {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              text-align: center;
             }
           }
           @media (max-width: 479px) {

@@ -570,8 +570,8 @@ const Services = (props) => {
           }
           @media (max-width: 1600px) {
             .services-nav {
-              padding-left: var(--dl-space-space-sixunits);
-              padding-right: var(--dl-space-space-sixunits);
+              padding-left: var(--dl-space-space-threeunits);
+              padding-right: var(--dl-space-space-threeunits);
             }
             .services-container02 {
               width: 95%;
@@ -674,8 +674,8 @@ const Services = (props) => {
           }
           @media (max-width: 1000px) {
             .services-nav {
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-oneandhalfunits);
+              padding-right: var(--dl-space-space-oneandhalfunits);
             }
             .services-container02 {
               width: 95%;
@@ -900,7 +900,8 @@ const Services = (props) => {
             .services-container02 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
-              justify-content: space-between;
+              flex-direction: row;
+              justify-content: center;
             }
             .services-container03 {
               width: auto;
@@ -917,6 +918,7 @@ const Services = (props) => {
             .services-text02 {
               width: 250px;
               font-size: 0.7rem;
+              text-align: center;
             }
             .services-container05 {
               width: auto;
@@ -924,13 +926,16 @@ const Services = (props) => {
               margin-left: var(--dl-space-space-halfunit);
             }
             .services-button {
+              font-size: 0.6rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              margin-left: var(--dl-space-space-unit);
             }
             .services-container06 {
               margin-top: var(--dl-space-space-halfunit);
+              margin-left: var(--dl-space-space-oneandhalfunits);
               margin-bottom: var(--dl-space-space-halfunit);
-              justify-content: space-between;
+              justify-content: center;
             }
             .services-container07 {
               width: auto;
@@ -955,13 +960,15 @@ const Services = (props) => {
               margin-left: var(--dl-space-space-halfunit);
             }
             .services-button1 {
+              font-size: 0.6rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              margin-left: var(--dl-space-space-halfunit);
             }
             .services-container10 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
-              justify-content: space-between;
+              justify-content: center;
             }
             .services-container11 {
               width: auto;
@@ -985,13 +992,16 @@ const Services = (props) => {
               margin-left: var(--dl-space-space-halfunit);
             }
             .services-button2 {
+              font-size: 0.6rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              margin-left: var(--dl-space-space-fiveunits);
             }
             .services-container14 {
               margin-top: var(--dl-space-space-halfunit);
+              margin-left: var(--dl-space-space-sixunits);
               margin-bottom: var(--dl-space-space-halfunit);
-              justify-content: space-between;
+              justify-content: center;
             }
             .services-container15 {
               width: auto;
@@ -1015,6 +1025,7 @@ const Services = (props) => {
               margin-left: var(--dl-space-space-halfunit);
             }
             .services-button3 {
+              font-size: 0.6rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
             }

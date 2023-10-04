@@ -314,9 +314,9 @@ const Contact = (props) => {
             height: auto;
             display: flex;
             align-self: flex-start;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
           }
           .contact-text02 {
             color: var(--dl-color-colors-cream);

@@ -53,8 +53,10 @@ const GalleryCard11 = (props) => {
           }
           @media (max-width: 500px) {
             .gallery-card11-button {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              text-align: center;
             }
           }
           @media (max-width: 479px) {
