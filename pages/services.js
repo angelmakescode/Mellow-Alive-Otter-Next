@@ -918,7 +918,6 @@ const Services = (props) => {
             .services-text02 {
               width: 250px;
               font-size: 0.7rem;
-              text-align: center;
             }
             .services-container05 {
               width: auto;

@@ -99,14 +99,15 @@ const Contact = (props) => {
             <div className="contact-container6">
               <div className="contact-container7">
                 <span className="contact-text02">
-                  <span>Phone:</span>
-                  <br></br>
-                  <span>(123)456-7891</span>
-                </span>
-                <span className="contact-text06">
                   <span>Email:</span>
                   <br></br>
                   <span>emailaddress@email.com</span>
+                </span>
+                <span className="contact-text06">
+                  <span>Phone:</span>
+                  <br></br>
+                  <span>(123)456-7891</span>
+                  <br></br>
                 </span>
               </div>
             </div>
@@ -118,7 +119,7 @@ const Contact = (props) => {
           </div>
         </div>
         <div className="contact-hero-type-11">
-          <h1 className="contact-text10">
+          <h1 className="contact-text11">
             “the heart of design lies in understanding the needs and desires of
             the people who inhabit a space.”
           </h1>
@@ -315,18 +316,16 @@ const Contact = (props) => {
             display: flex;
             align-self: flex-start;
             align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: row;
+            justify-content: center;
           }
           .contact-text02 {
             color: var(--dl-color-colors-cream);
             font-size: 1.2rem;
-            align-self: center;
             font-style: normal;
             margin-top: var(--dl-space-space-fiveunits);
             font-family: Merriweather;
             font-weight: 400;
-            margin-left: 0px;
           }
           .contact-text06 {
             color: var(--dl-color-colors-cream);
@@ -335,6 +334,7 @@ const Contact = (props) => {
             margin-top: var(--dl-space-space-fiveunits);
             font-family: Merriweather;
             font-weight: 400;
+            margin-left: var(--dl-space-space-twounits);
           }
           .contact-image2 {
             width: var(--dl-size-size-xxlarge);
@@ -357,7 +357,7 @@ const Contact = (props) => {
             justify-content: center;
             background-color: var(--dl-color-colors-red);
           }
-          .contact-text10 {
+          .contact-text11 {
             color: var(--dl-color-colors-cream);
             font-size: 2.4em;
             font-style: italic;
@@ -441,11 +441,9 @@ const Contact = (props) => {
               align-self: flex-start;
               font-style: normal;
               margin-top: var(--dl-space-space-fourunits);
-              text-align: left;
               font-family: Merriweather;
               font-weight: 400;
-              margin-left: 0px;
-              margin-right: var(--dl-space-space-twounits);
+              margin-bottom: var(--dl-space-space-fourunits);
             }
             .contact-text06 {
               color: var(--dl-color-colors-cream);
@@ -529,29 +527,28 @@ const Contact = (props) => {
             }
             .contact-text02 {
               color: var(--dl-color-colors-cream);
-              font-size: 1.5rem;
+              font-size: 1.2rem;
               font-style: normal;
-              margin-top: 0px;
+              margin-top: var(--dl-space-space-twounits);
               font-family: Merriweather;
               font-weight: 400;
-              margin-left: 0px;
-              margin-right: var(--dl-space-space-oneandhalfunits);
+              margin-bottom: var(--dl-space-space-twounits);
             }
             .contact-text06 {
               color: var(--dl-color-colors-cream);
-              font-size: 1.5rem;
+              font-size: 1.2rem;
               font-style: normal;
-              margin-top: 0px;
+              margin-top: var(--dl-space-space-twounits);
               font-family: Merriweather;
               font-weight: 400;
-              margin-bottom: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
             }
             .contact-hero-type-11 {
               width: 95%;
               padding: 0px;
               margin-top: var(--dl-space-space-fourunits);
             }
-            .contact-text10 {
+            .contact-text11 {
               width: 100%;
             }
           }
@@ -624,7 +621,6 @@ const Contact = (props) => {
               margin-top: var(--dl-space-space-twounits);
               font-family: Merriweather;
               font-weight: 400;
-              margin-left: 0px;
             }
             .contact-text06 {
               color: var(--dl-color-colors-cream);
@@ -634,11 +630,12 @@ const Contact = (props) => {
               margin-top: var(--dl-space-space-twounits);
               font-family: Merriweather;
               font-weight: 400;
+              margin-left: 0px;
             }
             .contact-hero-type-11 {
               width: 98%;
             }
-            .contact-text10 {
+            .contact-text11 {
               text-align: center;
             }
           }
@@ -732,12 +729,8 @@ const Contact = (props) => {
               color: var(--dl-color-colors-cream);
               font-size: 0.8rem;
               align-self: flex-start;
-              font-style: normal;
+              margin-top: var(--dl-space-space-threeunits);
               font-family: Merriweather;
-              font-weight: 400;
-              margin-left: 0px;
-              padding-top: 0px;
-              padding-bottom: 0px;
             }
             .contact-text06 {
               color: var(--dl-color-colors-cream);
@@ -752,7 +745,7 @@ const Contact = (props) => {
               border-width: 0px;
               background-color: var(--dl-color-colors-red);
             }
-            .contact-text10 {
+            .contact-text11 {
               color: var(--dl-color-colors-cream);
               font-size: 1.8em;
               font-style: italic;
@@ -856,12 +849,7 @@ const Contact = (props) => {
             .contact-text02 {
               color: var(--dl-color-colors-cream);
               font-size: 0.8rem;
-              font-style: normal;
               margin-top: var(--dl-space-space-threeunits);
-              font-family: Merriweather;
-              font-weight: 400;
-              margin-left: 0px;
-              padding-top: 0px;
             }
             .contact-text06 {
               color: var(--dl-color-colors-cream);
@@ -884,7 +872,7 @@ const Contact = (props) => {
               justify-content: center;
               background-color: var(--dl-color-colors-red);
             }
-            .contact-text10 {
+            .contact-text11 {
               color: var(--dl-color-colors-cream);
               width: auto;
               font-size: 1.2rem;

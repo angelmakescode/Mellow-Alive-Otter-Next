@@ -214,6 +214,9 @@ const AwardSection = (props) => {
               padding-right: var(--dl-space-space-halfunit);
               padding-bottom: var(--dl-space-space-halfunit);
             }
+            .award-section-container1 {
+              flex-direction: row;
+            }
             .award-section-container2 {
               height: auto;
               padding: var(--dl-space-space-halfunit);
@@ -230,7 +233,7 @@ const AwardSection = (props) => {
             .award-section-container3 {
               height: auto;
               padding: var(--dl-space-space-halfunit);
-              min-width: var(--dl-size-size-medium);
+              min-width: var(--dl-size-size-small);
               margin-left: var(--dl-space-space-halfunit);
               margin-right: var(--dl-space-space-halfunit);
             }
@@ -243,7 +246,7 @@ const AwardSection = (props) => {
             .award-section-container4 {
               height: auto;
               padding: var(--dl-space-space-halfunit);
-              min-width: var(--dl-size-size-medium);
+              min-width: var(--dl-size-size-small);
               margin-left: var(--dl-space-space-halfunit);
               margin-right: 0px;
             }

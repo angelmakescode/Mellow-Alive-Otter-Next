@@ -75,79 +75,83 @@ const Home = (props) => {
         </div>
         <div className="home-container02">
           <div className="home-container03">
-            <h1 className="home-text01">1. residential</h1>
-          </div>
-          <div className="home-container04">
-            <span className="home-text02">
-              <span>
-                Transform your living space into a haven of style and comfort
-                with our exceptional residential interior design services.
+            <div className="home-container04">
+              <h1 className="home-text01">1. residential</h1>
+            </div>
+            <div className="home-container05">
+              <span className="home-text02">
+                <span>
+                  Transform your living space into a haven of style and comfort
+                  with our exceptional residential interior design services.
+                </span>
+                <span></span>
               </span>
-              <span></span>
-            </span>
+            </div>
+            <div className="home-container06">
+              <button className="home-button button">get consult</button>
+            </div>
           </div>
-          <div className="home-container05">
-            <button className="home-button button">get consult</button>
-          </div>
-        </div>
-        <div className="home-container06">
           <div className="home-container07">
-            <h1 className="home-text05">2. commercial</h1>
-          </div>
-          <div className="home-container08">
-            <span className="home-text06">
-              <span>
-                With a focus on functionality, aesthetics, and creating a
-                memorable customer experience, we bring your commercial space to
-                life with impeccable attention to detail. Witness the
-                transformative power of exceptional design that enhances your
-                business&apos;s success and sets you apart from the competition.
+            <div className="home-container08">
+              <h1 className="home-text05">2. commercial</h1>
+            </div>
+            <div className="home-container09">
+              <span className="home-text06">
+                <span>
+                  With a focus on functionality, aesthetics, and creating a
+                  memorable customer experience, we bring your commercial space
+                  to life with impeccable attention to detail. Witness the
+                  transformative power of exceptional design that enhances your
+                  business&apos;s success and sets you apart from the
+                  competition.
+                </span>
+                <span></span>
               </span>
-              <span></span>
-            </span>
+            </div>
+            <div className="home-container10">
+              <button className="home-button1 button">get consult</button>
+            </div>
           </div>
-          <div className="home-container09">
-            <button className="home-button1 button">get consult</button>
-          </div>
-        </div>
-        <div className="home-container10">
           <div className="home-container11">
-            <h1 className="home-text09">3. staging</h1>
-          </div>
-          <div className="home-container12">
-            <span className="home-text10">
-              <span>
-                We understand the power of first impressions when it comes to
-                selling a property. Prepare to showcase your home&apos;s true
-                potential with our expert home staging interior design services.
+            <div className="home-container12">
+              <h1 className="home-text09">3. staging</h1>
+            </div>
+            <div className="home-container13">
+              <span className="home-text10">
+                <span>
+                  We understand the power of first impressions when it comes to
+                  selling a property. Prepare to showcase your home&apos;s true
+                  potential with our expert home staging interior design
+                  services.
+                </span>
+                <span></span>
               </span>
-              <span></span>
-            </span>
+            </div>
+            <div className="home-container14">
+              <button className="home-button2 button">get consult</button>
+            </div>
           </div>
-          <div className="home-container13">
-            <button className="home-button2 button">get consult</button>
-          </div>
-        </div>
-        <div className="home-container14">
           <div className="home-container15">
-            <h1 className="home-text13">
-              <span>4.3D</span>
-              <br></br>
-              <span>rendering</span>
-            </h1>
-          </div>
-          <div className="home-container16">
-            <span className="home-text17">
-              <span>
-                Experience the power of immersive visualizations with our
-                cutting-edge 3D rendering interior design services.
+            <div className="home-container16">
+              <h1 className="home-text13">
+                <span>4.3D</span>
+                <br></br>
+                <span>rendering</span>
+              </h1>
+            </div>
+            <div className="home-container17">
+              <span className="home-text17">
+                <span>
+                  Experience the power of immersive visualizations with our
+                  cutting-edge 3D rendering interior design services.
+                </span>
+                <br></br>
+                <br></br>
               </span>
-              <br></br>
-              <br></br>
-            </span>
-          </div>
-          <div className="home-container17">
-            <button className="home-button3 button">get consult</button>
+            </div>
+            <div className="home-container18">
+              <button className="home-button3 button">get consult</button>
+            </div>
           </div>
         </div>
         <div className="home-hero">
@@ -218,7 +222,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-hero-type-1">
-          <div className="home-container18">
+          <div className="home-container19">
             <h1 className="home-text33">Get in touch.</h1>
             <input
               type="text"
@@ -235,8 +239,8 @@ const Home = (props) => {
               placeholder="Email"
               className="home-textinput2 input"
             />
-            <div className="home-container19">
-              <div className="home-container20">
+            <div className="home-container20">
+              <div className="home-container21">
                 <textarea
                   placeholder="Message"
                   className="home-textarea textarea"
@@ -245,9 +249,9 @@ const Home = (props) => {
             </div>
             <button className="home-button7 button">start a project</button>
           </div>
-          <div className="home-container21">
+          <div className="home-container22">
             <h1 className="home-text34">Contact Info</h1>
-            <div className="home-container22">
+            <div className="home-container23">
               <span className="home-text35">
                 <span>Email:</span>
                 <br></br>
@@ -387,13 +391,21 @@ const Home = (props) => {
           }
           .home-container02 {
             flex: 0 0 auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .home-container03 {
+            flex: 0 0 auto;
             width: 95%;
             height: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
           }
-          .home-container03 {
+          .home-container04 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -408,7 +420,7 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .home-container04 {
+          .home-container05 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -420,7 +432,7 @@ const Home = (props) => {
           .home-text02 {
             width: 550px;
           }
-          .home-container05 {
+          .home-container06 {
             flex: 0 0 auto;
             width: 200px;
             display: flex;
@@ -442,7 +454,7 @@ const Home = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
-          .home-container06 {
+          .home-container07 {
             flex: 0 0 auto;
             width: 95%;
             height: auto;
@@ -450,7 +462,7 @@ const Home = (props) => {
             align-items: center;
             justify-content: space-between;
           }
-          .home-container07 {
+          .home-container08 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -465,7 +477,7 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .home-container08 {
+          .home-container09 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -477,7 +489,7 @@ const Home = (props) => {
           .home-text06 {
             width: 550px;
           }
-          .home-container09 {
+          .home-container10 {
             flex: 0 0 auto;
             width: 200px;
             display: flex;
@@ -499,7 +511,7 @@ const Home = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
-          .home-container10 {
+          .home-container11 {
             flex: 0 0 auto;
             width: 95%;
             height: auto;
@@ -507,7 +519,7 @@ const Home = (props) => {
             align-items: center;
             justify-content: space-between;
           }
-          .home-container11 {
+          .home-container12 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -522,7 +534,7 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .home-container12 {
+          .home-container13 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -534,7 +546,7 @@ const Home = (props) => {
           .home-text10 {
             width: 550px;
           }
-          .home-container13 {
+          .home-container14 {
             flex: 0 0 auto;
             width: 200px;
             display: flex;
@@ -556,7 +568,7 @@ const Home = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
-          .home-container14 {
+          .home-container15 {
             flex: 0 0 auto;
             width: 95%;
             height: auto;
@@ -570,7 +582,7 @@ const Home = (props) => {
             border-right-width: 0px;
             border-bottom-width: 1px;
           }
-          .home-container15 {
+          .home-container16 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -585,7 +597,7 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .home-container16 {
+          .home-container17 {
             flex: 0 0 auto;
             width: 200px;
             height: 100px;
@@ -597,7 +609,7 @@ const Home = (props) => {
           .home-text17 {
             width: 550px;
           }
-          .home-container17 {
+          .home-container18 {
             flex: 0 0 auto;
             width: 200px;
             display: flex;
@@ -770,7 +782,7 @@ const Home = (props) => {
             justify-content: space-between;
             background-color: var(--dl-color-colors-red);
           }
-          .home-container18 {
+          .home-container19 {
             width: 800px;
             display: flex;
             padding: var(--dl-space-space-threeunits);
@@ -793,7 +805,7 @@ const Home = (props) => {
             margin-top: var(--dl-space-space-twounits);
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .home-container19 {
+          .home-container20 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -801,7 +813,7 @@ const Home = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .home-container20 {
+          .home-container21 {
             flex: 0 0 auto;
             width: auto;
             height: 300px;
@@ -829,7 +841,7 @@ const Home = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
-          .home-container21 {
+          .home-container22 {
             flex: 0 0 auto;
             width: 800px;
             height: 700px;
@@ -845,7 +857,7 @@ const Home = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .home-container22 {
+          .home-container23 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -905,60 +917,60 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-fiveunits);
               padding-right: var(--dl-space-space-fiveunits);
             }
-            .home-container02 {
+            .home-container03 {
               width: 95%;
               justify-content: space-between;
             }
             .home-text01 {
               font-size: 1.8rem;
             }
-            .home-container04 {
+            .home-container05 {
               width: 500px;
               height: auto;
             }
-            .home-container05 {
+            .home-container06 {
               align-items: flex-end;
             }
-            .home-container06 {
+            .home-container07 {
               width: 95%;
               justify-content: space-between;
             }
             .home-text05 {
               font-size: 1.8rem;
             }
-            .home-container08 {
+            .home-container09 {
               width: 500px;
               height: auto;
             }
-            .home-container09 {
+            .home-container10 {
               align-items: flex-end;
             }
-            .home-container10 {
+            .home-container11 {
               width: 95%;
               justify-content: space-between;
             }
             .home-text09 {
               font-size: 1.8rem;
             }
-            .home-container12 {
+            .home-container13 {
               width: 500px;
               height: auto;
             }
-            .home-container13 {
+            .home-container14 {
               align-items: flex-end;
             }
-            .home-container14 {
+            .home-container15 {
               width: 95%;
               justify-content: space-between;
             }
             .home-text13 {
               font-size: 1.7rem;
             }
-            .home-container16 {
+            .home-container17 {
               width: 500px;
               height: auto;
             }
-            .home-container17 {
+            .home-container18 {
               align-items: flex-end;
             }
             .home-hero-type-1 {
@@ -974,7 +986,7 @@ const Home = (props) => {
               background-color: var(--dl-color-colors-red);
               border-bottom-width: 0px;
             }
-            .home-container18 {
+            .home-container19 {
               width: 500px;
               height: 500px;
             }
@@ -997,7 +1009,7 @@ const Home = (props) => {
               border-width: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .home-container20 {
+            .home-container21 {
               height: auto;
             }
             .home-textarea {
@@ -1005,7 +1017,7 @@ const Home = (props) => {
               height: 150px;
               border-width: 0px;
             }
-            .home-container21 {
+            .home-container22 {
               width: 500px;
               height: 500px;
               padding: var(--dl-space-space-twounits);
@@ -1062,7 +1074,7 @@ const Home = (props) => {
               padding-left: 38px;
               padding-right: 38px;
             }
-            .home-container02 {
+            .home-container03 {
               width: 95%;
               justify-content: space-between;
             }
@@ -1072,7 +1084,7 @@ const Home = (props) => {
             .home-text02 {
               width: 500px;
             }
-            .home-container06 {
+            .home-container07 {
               width: 95%;
               justify-content: space-between;
             }
@@ -1082,7 +1094,7 @@ const Home = (props) => {
             .home-text06 {
               width: 500px;
             }
-            .home-container10 {
+            .home-container11 {
               width: 95%;
               justify-content: space-between;
             }
@@ -1092,7 +1104,7 @@ const Home = (props) => {
             .home-text10 {
               width: 500px;
             }
-            .home-container14 {
+            .home-container15 {
               width: 95%;
               justify-content: space-between;
             }
@@ -1112,7 +1124,7 @@ const Home = (props) => {
               background-color: var(--dl-color-colors-red);
               border-bottom-width: 0px;
             }
-            .home-container18 {
+            .home-container19 {
               width: 700px;
               align-self: flex-start;
               align-items: flex-start;
@@ -1141,7 +1153,7 @@ const Home = (props) => {
             .home-button7 {
               margin-top: 160px;
             }
-            .home-container21 {
+            .home-container22 {
               width: 500px;
               height: 500px;
               padding: var(--dl-space-space-twounits);
@@ -1157,7 +1169,7 @@ const Home = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .home-container22 {
+            .home-container23 {
               align-items: center;
               flex-direction: row;
               justify-content: flex-start;
@@ -1193,7 +1205,7 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
-            .home-container02 {
+            .home-container03 {
               width: 95%;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -1202,13 +1214,13 @@ const Home = (props) => {
             .home-text01 {
               font-size: 1.8rem;
             }
-            .home-container04 {
+            .home-container05 {
               width: 500px;
             }
-            .home-container05 {
+            .home-container06 {
               align-items: flex-end;
             }
-            .home-container06 {
+            .home-container07 {
               width: 95%;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -1217,13 +1229,13 @@ const Home = (props) => {
             .home-text05 {
               font-size: 1.8rem;
             }
-            .home-container08 {
+            .home-container09 {
               width: 500px;
             }
-            .home-container09 {
+            .home-container10 {
               align-items: flex-end;
             }
-            .home-container10 {
+            .home-container11 {
               width: 95%;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -1232,13 +1244,13 @@ const Home = (props) => {
             .home-text09 {
               font-size: 1.8rem;
             }
-            .home-container12 {
+            .home-container13 {
               width: 500px;
             }
-            .home-container13 {
+            .home-container14 {
               align-items: flex-end;
             }
-            .home-container14 {
+            .home-container15 {
               width: 95%;
               margin-left: var(--dl-space-space-unit);
               margin-right: var(--dl-space-space-unit);
@@ -1247,10 +1259,10 @@ const Home = (props) => {
             .home-text13 {
               font-size: 1.7rem;
             }
-            .home-container16 {
+            .home-container17 {
               width: 500px;
             }
-            .home-container17 {
+            .home-container18 {
               align-items: flex-end;
             }
             .home-text29 {
@@ -1269,13 +1281,14 @@ const Home = (props) => {
               flex-direction: row;
               justify-content: space-between;
             }
-            .home-container18 {
+            .home-container19 {
               align-items: flex-start;
               margin-right: var(--dl-space-space-twounits);
               margin-bottom: 70px;
               padding-right: 0px;
             }
             .home-textinput {
+              width: 350px;
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
@@ -1290,7 +1303,7 @@ const Home = (props) => {
             .home-textarea {
               width: 350px;
             }
-            .home-container21 {
+            .home-container22 {
               width: 300px;
               align-self: center;
               align-items: flex-start;
@@ -1309,7 +1322,7 @@ const Home = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .home-container22 {
+            .home-container23 {
               flex-direction: column;
             }
             .home-text35 {
@@ -1348,7 +1361,7 @@ const Home = (props) => {
             .home-hero-type-1 {
               flex-direction: column;
             }
-            .home-container18 {
+            .home-container19 {
               align-items: center;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
@@ -1391,91 +1404,91 @@ const Home = (props) => {
             .home-text {
               align-self: flex-start;
             }
-            .home-container02 {
+            .home-container03 {
               width: 95%;
               margin-left: var(--dl-space-space-oneandhalfunits);
               margin-right: var(--dl-space-space-oneandhalfunits);
               justify-content: space-between;
             }
-            .home-container03 {
+            .home-container04 {
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-text01 {
               font-size: 1.8rem;
             }
-            .home-container04 {
+            .home-container05 {
               width: auto;
             }
             .home-text02 {
               width: 300px;
             }
-            .home-container05 {
+            .home-container06 {
               width: auto;
               align-items: flex-start;
             }
-            .home-container06 {
+            .home-container07 {
               width: 95%;
               margin-left: var(--dl-space-space-oneandhalfunits);
               margin-right: var(--dl-space-space-oneandhalfunits);
               justify-content: space-between;
             }
-            .home-container07 {
+            .home-container08 {
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-text05 {
               font-size: 1.8rem;
             }
-            .home-container08 {
+            .home-container09 {
               width: auto;
             }
             .home-text06 {
               width: 300px;
             }
-            .home-container09 {
+            .home-container10 {
               width: auto;
               align-items: flex-start;
             }
-            .home-container10 {
+            .home-container11 {
               width: 95%;
               margin-left: var(--dl-space-space-oneandhalfunits);
               margin-right: var(--dl-space-space-oneandhalfunits);
               justify-content: space-between;
             }
-            .home-container11 {
+            .home-container12 {
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-text09 {
               font-size: 1.8rem;
             }
-            .home-container12 {
+            .home-container13 {
               width: auto;
             }
             .home-text10 {
               width: 300px;
             }
-            .home-container13 {
+            .home-container14 {
               width: auto;
               align-items: flex-start;
             }
-            .home-container14 {
+            .home-container15 {
               width: 95%;
               margin-left: var(--dl-space-space-oneandhalfunits);
               margin-right: var(--dl-space-space-oneandhalfunits);
               justify-content: space-between;
             }
-            .home-container15 {
+            .home-container16 {
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-text13 {
               font-size: 1.7rem;
             }
-            .home-container16 {
+            .home-container17 {
               width: auto;
             }
             .home-text17 {
               width: 300px;
             }
-            .home-container17 {
+            .home-container18 {
               width: auto;
               align-items: flex-start;
             }
@@ -1492,7 +1505,7 @@ const Home = (props) => {
               width: auto;
               padding: var(--dl-space-space-unit);
             }
-            .home-container18 {
+            .home-container19 {
               width: 500px;
             }
             .home-text33 {
@@ -1509,14 +1522,17 @@ const Home = (props) => {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
             }
+            .home-textarea {
+              height: 150px;
+            }
             .home-button7 {
               font-size: 0.7rem;
-              margin-top: 165px;
+              margin-top: var(--dl-space-space-unit);
               margin-left: var(--dl-space-space-halfunit);
               padding-left: var(--dl-space-space-halfunit);
               padding-right: var(--dl-space-space-halfunit);
             }
-            .home-container21 {
+            .home-container22 {
               width: 250px;
             }
             .home-text34 {
@@ -1551,7 +1567,9 @@ const Home = (props) => {
             .home-hero-type-11 {
               width: 95%;
               padding: var(--dl-space-space-unit);
+              margin-top: 0px;
               border-width: 0px;
+              margin-bottom: var(--dl-space-space-threeunits);
               background-color: var(--dl-color-colors-red);
             }
             .home-text43 {
@@ -1626,18 +1644,25 @@ const Home = (props) => {
               text-align: left;
             }
             .home-container02 {
+              width: 500px;
+              height: auto;
+              align-items: center;
+              flex-direction: column;
+              justify-content: flex-start;
+            }
+            .home-container03 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
               justify-content: space-between;
             }
-            .home-container03 {
+            .home-container04 {
               width: auto;
               height: auto;
             }
             .home-text01 {
               font-size: 0.8em;
             }
-            .home-container04 {
+            .home-container05 {
               width: auto;
               height: auto;
               margin-left: var(--dl-space-space-unit);
@@ -1646,29 +1671,29 @@ const Home = (props) => {
               width: 250px;
               font-size: 0.7rem;
             }
-            .home-container05 {
+            .home-container06 {
               width: auto;
               align-items: flex-start;
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-button {
-              font-size: 0.8rem;
+              font-size: 0.5rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
             }
-            .home-container06 {
+            .home-container07 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
               justify-content: space-between;
             }
-            .home-container07 {
+            .home-container08 {
               width: auto;
               height: auto;
             }
             .home-text05 {
               font-size: 0.8em;
             }
-            .home-container08 {
+            .home-container09 {
               width: auto;
               height: auto;
               margin-left: var(--dl-space-space-unit);
@@ -1678,22 +1703,22 @@ const Home = (props) => {
               font-size: 0.7rem;
               text-align: left;
             }
-            .home-container09 {
+            .home-container10 {
               width: auto;
               align-items: flex-start;
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-button1 {
-              font-size: 0.8rem;
+              font-size: 0.5rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
             }
-            .home-container10 {
+            .home-container11 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
               justify-content: space-between;
             }
-            .home-container11 {
+            .home-container12 {
               width: auto;
               height: auto;
             }
@@ -1701,7 +1726,7 @@ const Home = (props) => {
               font-size: 0.8em;
               margin-right: var(--dl-space-space-twounits);
             }
-            .home-container12 {
+            .home-container13 {
               width: auto;
               height: auto;
               margin-left: var(--dl-space-space-unit);
@@ -1710,23 +1735,23 @@ const Home = (props) => {
               width: 215px;
               font-size: 0.7rem;
             }
-            .home-container13 {
+            .home-container14 {
               width: auto;
               align-items: flex-start;
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-button2 {
-              font-size: 0.8rem;
+              font-size: 0.5rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
               margin-left: 30px;
             }
-            .home-container14 {
+            .home-container15 {
               margin-top: var(--dl-space-space-halfunit);
               margin-bottom: var(--dl-space-space-halfunit);
               justify-content: space-between;
             }
-            .home-container15 {
+            .home-container16 {
               width: auto;
               height: auto;
             }
@@ -1734,7 +1759,7 @@ const Home = (props) => {
               font-size: 0.8em;
               margin-right: var(--dl-space-space-oneandhalfunits);
             }
-            .home-container16 {
+            .home-container17 {
               width: auto;
               height: auto;
               margin-left: var(--dl-space-space-unit);
@@ -1743,13 +1768,13 @@ const Home = (props) => {
               width: 215px;
               font-size: 0.7rem;
             }
-            .home-container17 {
+            .home-container18 {
               width: auto;
               align-items: flex-start;
               margin-left: var(--dl-space-space-halfunit);
             }
             .home-button3 {
-              font-size: 0.8rem;
+              font-size: 0.5rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
               margin-left: 36px;
@@ -1794,12 +1819,16 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-unit);
             }
             .home-button5 {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              text-align: center;
             }
             .home-button6 {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              text-align: center;
             }
             .home-hero-type-1 {
               width: 500px;
@@ -1812,11 +1841,12 @@ const Home = (props) => {
               flex-direction: row;
               justify-content: flex-start;
             }
-            .home-container18 {
+            .home-container19 {
               flex: 1;
               width: 250px;
               align-self: center;
               margin-right: 0px;
+              padding-left: 0px;
               margin-bottom: 0px;
               padding-right: 0px;
               flex-direction: column;
@@ -1847,7 +1877,7 @@ const Home = (props) => {
               font-size: 0.5rem;
               font-family: Merriweather;
             }
-            .home-container20 {
+            .home-container21 {
               flex-direction: column;
             }
             .home-textarea {
@@ -1859,14 +1889,14 @@ const Home = (props) => {
               font-family: Merriweather;
             }
             .home-button7 {
-              font-size: 0.8rem;
+              font-size: 0.7rem;
               align-self: flex-start;
               margin-top: var(--dl-space-space-unit);
               margin-left: 0px;
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
-            .home-container21 {
+            .home-container22 {
               width: 175px;
             }
             .home-text34 {
@@ -1880,7 +1910,7 @@ const Home = (props) => {
             .home-text35 {
               color: var(--dl-color-colors-cream);
               font-size: 0.8rem;
-              margin-top: var(--dl-space-space-threeunits);
+              margin-top: 0px;
             }
             .home-text39 {
               color: var(--dl-color-colors-cream);
@@ -1947,7 +1977,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container18 {
+            .home-container19 {
               margin-bottom: var(--dl-space-space-unit);
             }
             .home-hero-type-11 {
