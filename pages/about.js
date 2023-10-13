@@ -384,6 +384,9 @@ const About = (props) => {
             .about-container09 {
               width: 500px;
             }
+            .about-image3 {
+              width: 500px;
+            }
           }
           @media (max-width: 1500px) {
             .about-container05 {
@@ -533,12 +536,38 @@ const About = (props) => {
             .about-image2 {
               width: 250px;
             }
+            .about-container06 {
+              justify-content: center;
+            }
+            .about-container07 {
+              width: 450px;
+              align-items: center;
+              margin-left: 0px;
+              margin-right: 0px;
+              justify-content: center;
+            }
             .about-container08 {
-              width: 200px;
+              width: 150px;
+              height: auto;
+              align-items: center;
+            }
+            .about-text4 {
+              width: 150px;
+              height: 100%;
+              font-size: 0.7rem;
+              align-self: flex-start;
+              text-align: center;
             }
             .about-button1 {
+              font-size: 0.8rem;
               align-self: center;
               box-shadow: 5px 5px 10px 0px #ad9d9d;
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+            }
+            .about-image3 {
+              width: 275px;
+              height: 350px;
             }
           }
         `}

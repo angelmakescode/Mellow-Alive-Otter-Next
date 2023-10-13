@@ -84,38 +84,36 @@ const Contact = (props) => {
               placeholder="Email"
               className="contact-textinput2 input"
             />
-            <div className="contact-container3">
-              <div className="contact-container4">
-                <textarea
-                  placeholder="Message"
-                  className="contact-textarea textarea"
-                ></textarea>
-              </div>
-            </div>
+            <textarea
+              placeholder="Message"
+              className="contact-textarea textarea"
+            ></textarea>
             <button className="contact-button button">send</button>
           </div>
-          <div className="contact-container5">
+          <div className="contact-container3">
             <h1 className="contact-text01">Contact Info</h1>
-            <div className="contact-container6">
-              <div className="contact-container7">
-                <span className="contact-text02">
-                  <span>Email:</span>
-                  <br></br>
-                  <span>emailaddress@email.com</span>
-                </span>
-                <span className="contact-text06">
-                  <span>Phone:</span>
-                  <br></br>
-                  <span>(123)456-7891</span>
-                  <br></br>
-                </span>
+            <div className="contact-container4">
+              <div className="contact-container5">
+                <div className="contact-container6">
+                  <span className="contact-text02">
+                    <span>Email:</span>
+                    <br></br>
+                    <span>emailaddress@email.com</span>
+                  </span>
+                  <span className="contact-text06">
+                    <span>Phone:</span>
+                    <br></br>
+                    <span>(123)456-7891</span>
+                    <br></br>
+                  </span>
+                </div>
               </div>
+              <img
+                alt="image"
+                src="https://i.imgur.com/mseZpUy.png"
+                className="contact-image2"
+              />
             </div>
-            <img
-              alt="image"
-              src="https://i.imgur.com/mseZpUy.png"
-              className="contact-image2"
-            />
           </div>
         </div>
         <div className="contact-hero-type-11">
@@ -251,27 +249,13 @@ const Contact = (props) => {
             margin-top: var(--dl-space-space-twounits);
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .contact-container3 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-          }
-          .contact-container4 {
-            flex: 0 0 auto;
-            width: auto;
-            height: 300px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-          }
           .contact-textarea {
             width: 705px;
             height: 300px;
           }
           .contact-button {
             align-self: flex-start;
+            margin-top: var(--dl-space-space-unit);
             transition: 0.3s;
             font-family: Merriweather;
             padding-top: var(--dl-space-space-unit);
@@ -285,12 +269,11 @@ const Contact = (props) => {
             border-width: 1px;
             background-color: var(--dl-color-colors-red);
           }
-          .contact-container5 {
+          .contact-container3 {
             flex: 0 0 auto;
-            width: 800px;
-            height: 700px;
+            width: 200px;
+            height: auto;
             display: flex;
-            padding: var(--dl-space-space-twounits);
             align-items: flex-start;
             flex-direction: column;
           }
@@ -301,7 +284,16 @@ const Contact = (props) => {
             font-family: Merriweather;
             font-weight: 700;
           }
-          .contact-container6 {
+          .contact-container4 {
+            flex: 0 0 auto;
+            width: 800px;
+            height: 700px;
+            display: flex;
+            padding: var(--dl-space-space-twounits);
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .contact-container5 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -309,7 +301,7 @@ const Contact = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .contact-container7 {
+          .contact-container6 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -386,9 +378,11 @@ const Contact = (props) => {
             .contact-container2 {
               width: 500px;
               height: 500px;
+              padding-top: 0px;
             }
             .contact-text {
               color: var(--dl-color-colors-cream);
+              font-size: 2.8rem;
             }
             .contact-textinput {
               width: 335px;
@@ -406,9 +400,6 @@ const Contact = (props) => {
               border-width: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .contact-container4 {
-              height: auto;
-            }
             .contact-textarea {
               width: 335px;
               height: 150px;
@@ -416,15 +407,6 @@ const Contact = (props) => {
             }
             .contact-button {
               align-self: flex-start;
-            }
-            .contact-container5 {
-              width: 500px;
-              height: 500px;
-              padding: var(--dl-space-space-twounits);
-              align-self: center;
-              align-items: center;
-              border-radius: 10px;
-              background-color: var(--dl-color-colors-red);
             }
             .contact-text01 {
               color: var(--dl-color-colors-cream);
@@ -434,6 +416,18 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
               margin-bottom: var(--dl-space-space-twounits);
+            }
+            .contact-container4 {
+              width: 500px;
+              height: 500px;
+              align-self: center;
+              align-items: center;
+              padding-top: 0px;
+              padding-left: var(--dl-space-space-twounits);
+              border-radius: 10px;
+              padding-right: var(--dl-space-space-twounits);
+              padding-bottom: var(--dl-space-space-twounits);
+              background-color: var(--dl-color-colors-red);
             }
             .contact-text02 {
               color: var(--dl-color-colors-cream);
@@ -483,6 +477,7 @@ const Contact = (props) => {
               width: 700px;
               padding: 0px;
               align-items: flex-start;
+              margin-left: var(--dl-space-space-twounits);
               margin-right: 0px;
             }
             .contact-text {
@@ -509,13 +504,8 @@ const Contact = (props) => {
             .contact-button {
               align-self: flex-start;
               margin-top: var(--dl-space-space-unit);
-            }
-            .contact-container5 {
-              width: 500px;
-              height: 500px;
-              padding: 0px;
-              align-items: flex-start;
-              border-radius: 10px;
+              margin-bottom: 0px;
+              padding-right: var(--dl-space-space-twounits);
             }
             .contact-text01 {
               color: var(--dl-color-colors-cream);
@@ -524,6 +514,13 @@ const Contact = (props) => {
               margin-top: var(--dl-space-space-threeunits);
               font-family: Merriweather;
               font-weight: 700;
+            }
+            .contact-container4 {
+              width: 500px;
+              height: 500px;
+              padding: 0px;
+              align-items: flex-start;
+              border-radius: 10px;
             }
             .contact-text02 {
               color: var(--dl-color-colors-cream);
@@ -599,9 +596,6 @@ const Contact = (props) => {
             .contact-button {
               align-self: flex-start;
             }
-            .contact-container5 {
-              width: 350px;
-            }
             .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1.5rem;
@@ -610,7 +604,10 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-container7 {
+            .contact-container4 {
+              width: 350px;
+            }
+            .contact-container6 {
               flex-direction: column;
             }
             .contact-text02 {
@@ -709,11 +706,6 @@ const Contact = (props) => {
             .contact-button {
               align-self: flex-start;
             }
-            .contact-container5 {
-              width: 250px;
-              padding: 0px;
-              flex-direction: column;
-            }
             .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1em;
@@ -722,7 +714,12 @@ const Contact = (props) => {
               font-family: Merriweather;
               font-weight: 700;
             }
-            .contact-container7 {
+            .contact-container4 {
+              width: 250px;
+              padding: 0px;
+              flex-direction: column;
+            }
+            .contact-container6 {
               flex-direction: column;
             }
             .contact-text02 {
@@ -784,6 +781,7 @@ const Contact = (props) => {
             .contact-container2 {
               flex: 1;
               width: 250px;
+              height: auto;
               align-self: center;
               margin-right: 0px;
               padding-left: 0px;
@@ -830,19 +828,31 @@ const Contact = (props) => {
               align-self: flex-start;
               font-family: Merriweather;
             }
-            .contact-container5 {
-              width: 200px;
-              padding: 0px;
+            .contact-container3 {
+              height: 290px;
             }
             .contact-text01 {
               color: var(--dl-color-colors-cream);
               font-size: 1rem;
               font-style: normal;
+              margin-top: 0px;
               text-align: left;
               font-family: Merriweather;
               font-weight: 700;
+              margin-bottom: 0px;
             }
-            .contact-container7 {
+            .contact-container4 {
+              width: 200px;
+              height: auto;
+              padding: 0px;
+              background-color: transparent;
+            }
+            .contact-container5 {
+              align-items: flex-start;
+              flex-direction: column;
+              justify-content: flex-start;
+            }
+            .contact-container6 {
               width: 200px;
               flex-direction: column;
             }

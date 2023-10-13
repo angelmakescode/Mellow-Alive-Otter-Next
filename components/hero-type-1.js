@@ -161,6 +161,7 @@ const HeroType1 = (props) => {
             .hero-type-1-hero-type-1 {
               width: 500px;
               max-width: auto;
+              min-width: var(--dl-size-size-xxlarge);
               min-height: auto;
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
